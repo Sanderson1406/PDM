@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/id_pergunta1"
+        android:layout_width="346dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="29dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="1- Qual o nome do primeiro rei Targaryen?"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton1_1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="A) Jon Snow" />
+
+        <RadioButton
+            android:id="@+id/radioButton1_2"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="B) Viserys" />
+
+        <RadioButton
+            android:id="@+id/radioButton1_3"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="C) Meagor" />
+
+        <RadioButton
+            android:id="@+id/radioButton1_4"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="D) Aegon" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/id_pergunta2"
+        android:layout_width="355dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_pergunta1"
+        app:layout_constraintVertical_bias="0.3">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="2- Quem foi o primerio papa da igreja católica?"
+            android:textSize="15dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="A) Pedro - Apostolo" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="B) Clemente" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="C) Constantino" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="D) Paulo" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/id_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Finalizar Prova"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_pergunta2"
+        app:layout_constraintVertical_bias="0.285" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
